@@ -40,6 +40,8 @@ ALLOWED_HOSTS = ['website-name-here.com']
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Heroku Logging
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
