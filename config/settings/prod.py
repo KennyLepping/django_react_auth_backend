@@ -7,7 +7,9 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['website-name-here.com']
+ALLOWED_HOSTS = [
+    'kennys-django-react-auth.herokuapp.com',
+]
 
 # AWS S3 Settings
 
