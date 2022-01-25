@@ -132,6 +132,3 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000"
     # TODO: FRONTEND URL HERE
 ]
-
-# Custom user model
-AUTH_USER_MODEL = "users.CustomUser"
