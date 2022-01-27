@@ -11,6 +11,7 @@ ALLOWED_HOSTS = [
     'kennys-django-react-auth.herokuapp.com',
 ]
 
+
 # AWS S3 Settings
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
@@ -21,8 +22,8 @@ AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
 
 AWS_S3_CUSTOM_DOMAIN = 'd3t7z2ygpu11ag.cloudfront.net'
 
-# AWS_DEFAULT_ACL = 'public-read' # This didn't work
-AWS_DEFAULT_ACL = None
+AWS_DEFAULT_ACL = 'public-read' # This didn't work
+# AWS_DEFAULT_ACL = None
 
 AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
 
