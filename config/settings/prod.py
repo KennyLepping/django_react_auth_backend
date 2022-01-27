@@ -23,7 +23,7 @@ AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
 
 # AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-AWS_S3_CUSTOM_DOMAIN = 'd28gmzqzeakcc8.cloudfront.net'
+AWS_S3_CUSTOM_DOMAIN = 'd3t7z2ygpu11ag.cloudfront.net'
 
 # AWS_DEFAULT_ACL = 'public-read'
 AWS_DEFAULT_ACL = None
