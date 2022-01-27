@@ -129,7 +129,7 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"
+    "http://localhost:3000",
     "d3t7z2ygpu11ag.cloudfront.net"
     # TODO: FRONTEND URL HERE
 ]
