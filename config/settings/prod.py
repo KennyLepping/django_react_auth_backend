@@ -22,7 +22,6 @@ AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
 
 AWS_S3_CUSTOM_DOMAIN = 'd3t7z2ygpu11ag.cloudfront.net'
 
-# AWS_DEFAULT_ACL = 'public-read' # This didn't work
 AWS_DEFAULT_ACL = None
 
 AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
@@ -32,7 +31,7 @@ AWS_QUERYSTRING_AUTH = False
 AWS_HEADERS = {'Access-Control-Allow-Origin': '*'}
 
 
-# # Static files (CSS, JavaScript, Images)
+# Static files (CSS, JavaScript, Images)
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
@@ -42,6 +41,7 @@ STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
 
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
+SECURE_SSL_REDIRECT = True
 
 # Heroku Logging
 
