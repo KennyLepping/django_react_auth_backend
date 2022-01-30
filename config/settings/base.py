@@ -132,7 +132,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://d3t7z2ygpu11ag.cloudfront.net"
+    "https://d3t7z2ygpu11ag.cloudfront.net",
     "https://www.kennystestdomain.de"
     # TODO: FRONTEND URL HERE
 ]
