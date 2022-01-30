@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 load_dotenv(find_dotenv())
 
-DATABASES = { # Automatically fills in config variable called DATABASE_URL in Heroku
+DATABASES = {  # Automatically fills in config variable called DATABASE_URL in Heroku
     'default': dj_database_url.config(default='sqlite:///db.sqlite3', conn_max_age=600)
 }
 
@@ -133,6 +133,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://d3t7z2ygpu11ag.cloudfront.net"
+    "https://www.kennystestdomain.de"
     # TODO: FRONTEND URL HERE
 ]
 
