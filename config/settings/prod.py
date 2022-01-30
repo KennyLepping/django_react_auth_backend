@@ -41,7 +41,11 @@ STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
 
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
+
+# Django Production Settings
+
 SECURE_SSL_REDIRECT = True
+
 
 # Heroku Logging
 

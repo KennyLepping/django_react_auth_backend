@@ -14,7 +14,8 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         # Custom data you want to include upon logging in
         data.update({
             'id': self.user.id,
-            'email': self.user.email
+            'email': self.user.email,
+            'username': self.user.username
         })
         
         # and everything else you want to send in the response
@@ -22,11 +23,11 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
-
+ 
     class Meta:
         model = User
-        fields = ['url', 'id', 'email']
-        depth = 1
+        fields = ['url', 'id', 'email', 'username', 'password']
+        depth = 1 # For nested objects (foreign keys)
         extra_kwargs = {'password': {'write_only': True}}
 
     def validate_password(self, value):

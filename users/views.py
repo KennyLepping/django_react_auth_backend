@@ -21,18 +21,17 @@ class CustomUserCreate(APIView):
     permission_classes = [permissions.AllowAny]
 
     def post(self, request, format='json'):
-        # print(request.data)
+        print(request.data)
         data = request.data
         reg_serializer = UserSerializer(data=data)
         if reg_serializer.is_valid():
+            print(reg_serializer.validated_data)
             password = reg_serializer.validated_data.get('password')
             reg_serializer.validated_data['password'] = make_password(password)
             new_user = reg_serializer.save()
 
-            data.update({'id': User.objects.get(email=new_user.email).pk})
-
-            if new_user:
-                return Response(data, status=status.HTTP_201_CREATED)
+        if new_user:
+            return Response(data, status=status.HTTP_201_CREATED)
         return Response(reg_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
