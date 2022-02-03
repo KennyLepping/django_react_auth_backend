@@ -1,5 +1,5 @@
-import django_on_heroku
 from decouple import config
+import django_on_heroku
 
 from .base import *
 
