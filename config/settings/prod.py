@@ -9,6 +9,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'kennys-django-react-auth.herokuapp.com',
+    
 ]
 
 
