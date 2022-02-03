@@ -9,7 +9,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'kennys-django-react-auth.herokuapp.com',
-    
+
 ]
 
 
@@ -45,7 +45,7 @@ MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
 # Django Production Settings
 
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
 
 # Heroku Logging

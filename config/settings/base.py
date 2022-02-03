@@ -17,7 +17,7 @@ import dj_database_url
 from decouple import config
 from dotenv import load_dotenv, find_dotenv
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Add an extra .parent
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
